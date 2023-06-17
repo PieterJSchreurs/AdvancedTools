@@ -81,7 +81,7 @@ public class GenerationManager : MonoBehaviour
             if (simulationCount >= simulationTimer)
             {
                 ++generationCount;
-                if(generationCount >= 2)
+                if(generationCount >= 999)
                 {
                     StopSimulation();
                     EditorApplication.ExitPlaymode();
