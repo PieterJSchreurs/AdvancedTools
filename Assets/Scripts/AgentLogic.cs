@@ -400,4 +400,21 @@ public class AgentLogic : MonoBehaviour, IComparable
     {
         return new AgentData(steps, rayRadius, sight, movingSpeed, randomDirectionValue, boxWeight, distanceFactor, boatWeight, boatDistanceFactor, enemyWeight,  enemyDistanceFactor);
     }
+
+    public string ParseDataToCSVString()
+    {
+        string result = "";
+        result += steps + ",";
+        result += rayRadius + ",";
+        result += sight + ",";
+        result += movingSpeed + ",";
+        result += randomDirectionValue + ",";
+        result += boxWeight + ",";
+        result += distanceFactor + ",";
+        result += boatWeight + ",";
+        result += boatDistanceFactor + ",";
+        result += enemyWeight + ",";
+        result += enemyDistanceFactor;
+        return result;
+    }
 }
